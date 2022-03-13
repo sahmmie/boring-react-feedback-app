@@ -4,7 +4,7 @@ import FeedbackContext from '../context/feedbackContext';
 function FeedbackStat() {
   const { feedback } = useContext(FeedbackContext);
   let avarage =
-    feedback.reduce((total, item) => total + item.rating, 0) /
+    feedback.reduce((total, item) => total + parseInt(item.rating), 0) /
       feedback.length || 0;
 
   return (

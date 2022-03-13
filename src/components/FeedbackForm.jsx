@@ -46,7 +46,7 @@ function FeedbackForm() {
       const newFeedback = {
         text,
         rating,
-        id: uuidv4(),
+        // id: uuidv4(),
       };
       if (feedbackEdit.edit) {
         updateFeedback(feedbackEdit.item.id, newFeedback);
